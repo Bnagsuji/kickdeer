@@ -1,4 +1,5 @@
 package com.kick.kickdeer.controller.point.response;
 
-public class PointRes {
-}
+public record PointRes(
+
+) {}

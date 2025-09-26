@@ -9,7 +9,7 @@ import jakarta.validation.constraints.NotNull;
 import java.time.LocalDateTime;
 
 @Entity
-public class Point {
+public class PointHistory {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -19,9 +19,13 @@ public class Point {
     private Long userId;
 
     @NotNull
-    private Long point;
+    private Long current_point;
+
+    @NotNull
+    private Long amount;
+
+    private PointType pointType;
 
     private LocalDateTime modifiedDate;
-
 
 }
